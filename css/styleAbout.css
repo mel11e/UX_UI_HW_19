@@ -1,0 +1,273 @@
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* Header area */
+
+div.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    width: 100%;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+a:any-link {
+    color: black;
+    text-decoration: none;
+}
+
+.menuBar a{
+    padding: 20px 40px;
+}
+
+.menuBar {
+    text-align: center;
+    padding-bottom: 80px;
+}
+
+.nav {
+    display: inline;
+    font-size: 2em;
+    width: 100%;
+}
+.nav a:hover {
+    font-weight: 600;
+}
+
+.nav a::after {
+    border-bottom: black 3px;
+}
+
+/* About area */
+.about {
+    width: 100%;
+    background-color: #EAD7C6;
+}
+
+.aboutArea {
+    padding-top: 5%;
+}
+
+li {
+    list-style-type: none;
+    text-align: center;
+}
+h3 {
+    font-weight: normal;
+    margin-bottom: 0;
+}
+h4 {
+    font-weight: normal;
+    margin-top: 0;
+    text-transform: uppercase;
+    font-size: 10px;
+}
+
+.aboutContainer {
+    margin-right: 5%;
+}
+.aboutArea {
+    display: flex;
+    margin: auto;
+}
+.aboutMe {
+    margin-top: 0;
+    text-align: center;
+}
+.aboutLine  {
+    height: 10px;
+    width: 50%;
+    background-color: #E75548;
+    text-align: center;
+}
+
+.themes {
+    width: 10%;
+    margin-left: 5%;
+    margin-right: 3%;
+}
+
+.me {
+    margin-right: 3%;
+    margin-bottom: 3%;
+
+}
+
+
+/* 
+.skillsContainer {
+    display: block;
+    width: 100%;
+    margin: auto;
+    background-color:  #EAD7C6;
+
+}
+
+.skills {
+    width: 45%;
+    margin-left: 5%;
+} */
+
+.mySkills {
+    display: block;
+    text-align: center;
+    width: 100%;
+    padding-top: 1%;
+    /* padding-bottom: 1%; */
+}
+
+.skillIcon {
+    width: 50px;
+    height: 50px;
+}
+
+.icon {
+    text-align: center;
+}
+
+.skillTitle {
+    text-align: center;
+    padding-top: 10px;
+    font-size: 18px;
+}
+
+.area1 {
+    grid-area: skillArea1;
+
+}
+.area2 {
+    grid-area: skillArea2;
+
+}
+.area3 {
+    grid-area: skillArea3;
+
+}
+.skillsGrid {
+    display: grid;
+    grid-template-areas: 'skillArea1 skillArea2 skillArea3';
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+.skillArea1, .skillArea2, .skillArea3 {
+    display: flexbox;
+    padding: 20px;
+    width: 300px;
+
+}
+
+#body2 {
+    padding-bottom: 38px;
+}
+#body3 {
+    padding-bottom: 20px;
+}
+
+
+.skillsLine {
+    height: 10px;
+    width: 50%;
+    background-color: #E75548;
+
+}
+    
+
+.toolsContainer {
+    display: block; 
+    /* text-align: right; */
+    text-align: center;
+    align-items: center;
+    /* padding-left: 50%; */
+    background-color:  #EAD7C6;
+    padding-bottom: 5%;
+    padding-top: 2%;
+    margin-right: 0;
+}
+
+
+.toolsLine {
+    height: 10px;
+    width: 50%;
+    background-color: #E75548;
+    float: left;
+
+}
+
+.tools {
+    align-items: center;
+    width: 45%;
+    padding-left: 27.5%;
+    padding-right: 27.5%;
+}
+
+
+/* Footer area */
+
+footer {
+    text-align: center;
+    width: 100%;
+    margin-top: 45px;
+}
+
+.connect-li {
+    display: inline;
+    width: 100%;
+    padding: .5em;
+}
+
+.footer-ul {
+    padding-left: 0;
+    padding-bottom: 35px;
+}
+
+
+.footerBar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 6vh;
+    width: 100%;
+    background-color: #E75548;
+}
+
+.copyright {
+    height: 10px;
+    width: 10px;
+    padding-left: .1em;
+
+}
+
+.copyright-words{
+    font-size: .75rem;
+    text-align: center;
+    margin: 0;
+
+}
+
+
+
+
+
+@media only screen and (max-width: 600px) {
+    .skillsGrid {
+        margin: 0px 5%;
+        display: grid; 
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: 
+        "skillArea1"
+        "skillArea2"
+        "skillArea3";
+    }
+  }
